@@ -1,0 +1,15 @@
+---
+replicaCount: 2
+
+ingress:
+  hosts:
+    - host: python-app-final.test.com
+      paths:
+        - path: /
+          pathType: Prefix
+
+resources:
+  requests:
+    cpu: 60m
+    memory: 60Mi
+
